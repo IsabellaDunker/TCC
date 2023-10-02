@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerChild {
+    float: left;
+    width: 50%;
+}
+
+.child1{
+    background-color: #fff;
+    height: 500px;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.child1 hr {
+    margin-bottom: 10px;
+}
+
+.child2 {
+    background-color: #fff;
+    height: 500px;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.sequence {
+    flex: 1;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+}

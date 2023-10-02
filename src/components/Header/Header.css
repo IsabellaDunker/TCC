@@ -1,0 +1,27 @@
+.header {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header img{
+  margin: 10px 10px 10px 30px;
+  height: 71px;
+}
+
+.avatar {
+  position: absolute;
+  right: 0;
+}
+
+.header button {
+  background-color: white;
+  border: none;
+  margin-left: 20px;
+}
+
+.menu {
+  width: 35px;
+  height: 30px;
+}

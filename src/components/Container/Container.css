@@ -1,0 +1,45 @@
+.container {
+    height: 110px;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-sizing: border-box;
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+    align-items: center;
+}
+
+.mail {
+    width: 33px;
+    height: 33px;
+    margin-left: 30px;
+}
+
+.container p {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.container button {
+    margin: 20px;
+    background: #073B59E5;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 3px 30px 6px 30px;
+}

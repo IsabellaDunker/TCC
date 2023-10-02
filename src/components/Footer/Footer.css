@@ -1,0 +1,57 @@
+
+.footer-main ul {
+    list-style: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0 10rem 2rem 10rem;
+}
+
+.col {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.col a {
+    margin: 15px;
+    
+}
+
+.mainText {
+    color: rgba(7, 59, 89, 0.90);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.number {
+    margin-top: 5px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.secondText {
+    margin-top: 10px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}

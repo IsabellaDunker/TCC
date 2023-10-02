@@ -1,0 +1,64 @@
+.calendar-main {
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+  }
+
+.calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  height: 370px;
+  font-size: 18px;
+  font-family: Open Sans;
+  border: none;
+}
+
+.calendar button {
+  font-size: 18px;
+  font-family: Open Sans;
+}
+
+.calendar span {
+  font-size: 24px;
+  font-family: Open Sans;
+}
+
+.planner {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  height: 370px;
+  text-align: center;
+}
+
+.planner button {
+  display: flex;
+  float: right;
+  margin: 1rem;
+  background-color: white;
+  border: none;
+}
+
+.day {
+  flex-direction: column;
+  color: #000;
+  font-family: Nunito;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 3.5rem;
+}
+
+.day-week {
+  flex-direction: column;
+  font-family: Nunito;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
