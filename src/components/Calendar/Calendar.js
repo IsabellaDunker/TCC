@@ -5,6 +5,8 @@ import FeatherIcon from 'feather-icons-react';
 import Moment from 'react-moment';
 import 'moment/locale/pt-br';
 import './Calendar.css'
+import ModalComponent from '../Modal/Modal';
+
 
 function Calendar1() {
   // Array to store month string values
@@ -47,22 +49,47 @@ function Calendar1() {
     setCalendarText(`${monthValue}`);
   };
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
-    <div className="calendar-main">
-      <div className="planner">
-        <button><FeatherIcon icon="plus-circle" /></button>
-        <p className="day"><Moment format="DD">{selectedDate}</Moment></p>
-        <p  className="day-week"><Moment format="dddd">{selectedDate}</Moment></p>
-        <hr/>
+    <div>
+      <div className="calendar-main">
+        <div className="planner">
+          <button
+          onClick={openModal}>
+          <FeatherIcon icon="plus-circle" />
+          </button>
+          <p className="day"><Moment format="DD">{selectedDate}</Moment></p>
+          <p  className="day-week"><Moment format="dddd">{selectedDate}</Moment></p>
+          <hr/>
+        </div>
+        <Calendar
+          className="calendar"
+          onClickMonth={handleMonthChange}
+          onClickYear={handleYearChange}
+          onChange={handleDateChange}
+          value={selectedDate}
+        />
       </div>
-      <Calendar
-        className="calendar"
-        onClickMonth={handleMonthChange}
-        onClickYear={handleYearChange}
-        onChange={handleDateChange}
-        value={selectedDate}
-      />
+
+      <div className="modal">
+        <ModalComponent
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          modalText="Este é um modal simples com React."
+        />
+      </div>
     </div>
+
+    
   );
 }
 

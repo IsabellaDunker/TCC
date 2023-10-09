@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import NewsPage from './pages/NewsPage';
+import NewsPage from './Pages/NewsPage';
+import Data from './data';
 // configurando router
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   }, {
     path: "news",
     element: <NewsPage />
+  },
+  {
+  path: "test",
+  element: <Data />
   },
 ])
 
