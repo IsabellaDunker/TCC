@@ -1,0 +1,116 @@
+.modal-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #FFFFFF;
+  height: 400px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.day-modal {
+    flex-direction: column;
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+/* Estilos para os contêineres dos inputs */
+.input-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os campos de entrada */
+.input-field {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilos para os campos de entrada quando focados (exibindo uma borda colorida) */
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+.save-button {
+    width: 150px;
+    height: 44px;
+    border-radius: 5px;
+    background: rgba(7, 59, 89, 0.90);
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button {
+    width: 150px;
+    height: 44px;
+    border-radius: 5px;
+    background: #FE5000;
+    margin-top: 16px;
+    border: none;
+    margin-right: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.save-button p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.close-button p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.container-title {
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.container-title-b {
+    margin-top: 15px;
+}
+
+.container-title p {
+    margin-left: 10px;
+}
+
+.confirm-delete-modal {
+    margin: 15px;
+}
+
+.confirm-delete-modal-b {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: #FE5000;
+    margin-top: 13px;
+    border: none;
+    margin-right: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.confirm-delete-modal-b p {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}

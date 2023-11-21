@@ -1,7 +1,7 @@
 .calendar-main {
   align-items: center;
   justify-content: center;
-    width: 100%;
+  width: 100%;
   }
 
 .calendar{
@@ -18,6 +18,58 @@
   border: none;
 }
 
+hr {
+  margin-bottom: 1rem;
+}
+
+.title {
+  flex-direction: column;
+  color: #000;
+  font-size: 17px;
+  font-family: 'open sans';
+  font-weight: 500;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  font-size: 17px;
+  font-family: 'open sans';
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+.more-button {
+  display: flex;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  border: none;
+}
+
+.more-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.more-icon:hover {
+  color: #334C7D;
+  cursor: pointer;
+}
+
+.clock-icon {
+  position: absolute;
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 2.2rem;
+  width: 20px;
+  height: 20px;
+}
+
 .calendar button {
   font-size: 18px;
   font-family: Open Sans;
@@ -28,35 +80,44 @@
   font-family: Open Sans;
 }
 
-.planner {
+.planner-container {
   display: inline-block;
   vertical-align: middle;
-  width: 40%;
+  width: 36%;
   height: 370px;
+}
+
+.planner {
   text-align: center;
 }
 
-.planner button {
+.plus-button {
   display: flex;
   float: right;
-  margin: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
   background-color: white;
   border: none;
+  transition: white 0.2s ease;
+}
+
+.plus-button:hover{
+  color: #334C7D;
+  cursor: pointer;
 }
 
 .day {
   flex-direction: column;
   color: #000;
-  font-family: Nunito;
-  font-size: 40px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .day-week {
   flex-direction: column;
-  font-family: Nunito;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -64,9 +125,6 @@
 }
 
 .modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   visibility: hidden;
 }
 

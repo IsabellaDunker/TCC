@@ -19,7 +19,6 @@
 }
 
 .col {
-    margin: 1.5rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -27,7 +26,7 @@
 
 .col a {
     margin: 15px;
-    
+    cursor: pointer;
 }
 
 .mainText {
@@ -54,4 +53,5 @@
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
+    cursor: pointer;
 }
